@@ -56,6 +56,15 @@
     border-radius: 4px;
   }
 
+  &__heading {
+    color: var(--black);
+
+    &:hover {
+      cursor: pointer;
+      color: var(--yellow);
+    }
+  }
+
   &__body {
     color: var(--grey);
   }
