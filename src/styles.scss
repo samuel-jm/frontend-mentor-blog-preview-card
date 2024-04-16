@@ -18,7 +18,8 @@
 
 .card {
   display: flex;
-  width: 384px;
+  min-width: 327px;
+  max-width: 384px;
   background-color: var(--white);
   padding: 24px;
   gap: 24px;
@@ -80,13 +81,16 @@
 
   &_size {
     &_s {
-      font-size: 14px;
+      font-size: clamp(0.75rem, -0.0724rem + 3.509vw, 0.875rem);
+    }
+    &_s-unmodified {
+      font-size: 0.875rem;
     }
     &_m {
-      font-size: 16px;
+      font-size: clamp(0.875rem, 0.0525rem + 3.509vw, 1rem);
     }
     &_l {
-      font-size: 24px;
+      font-size: clamp(1.25rem, -0.395rem + 7.02vw, 1.5rem);
     }
   }
 }
@@ -97,6 +101,8 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  padding: 0 24px;
 }
 
 :root {
@@ -111,6 +117,8 @@ main {
   bottom: 15px;
   left: 50%;
   transform: translateX(-50%);
+
+  width: fit-content;
 
   font-size: 11px;
   text-align: center;
