@@ -31,6 +31,12 @@
   &__image {
     border-radius: 10px;
   }
+}
+
+.text-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 
   &__tag {
     background-color: var(--yellow);
