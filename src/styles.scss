@@ -55,6 +55,31 @@
     padding: 4px 12px;
     border-radius: 4px;
   }
+
+  &__body {
+    color: var(--grey);
+  }
+}
+
+.text {
+  font-family: Figtree, sans-serif;
+  font-weight: 600;
+
+  &_bold {
+    font-weight: 800;
+  }
+
+  &_size {
+    &_s {
+      font-size: 14px;
+    }
+    &_m {
+      font-size: 16px;
+    }
+    &_l {
+      font-size: 24px;
+    }
+  }
 }
 
 main {
