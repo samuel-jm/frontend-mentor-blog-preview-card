@@ -1,7 +1,26 @@
+@font-face {
+  font-family: "Figtree";
+  font-weight: 600;
+  src: url("./assets/fonts/static/Figtree-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Figtree";
+  font-weight: 800;
+  src: url("./assets/fonts/static/Figtree-ExtraBold.ttf") format("truetype");
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+:root {
+  --black: #000;
+  --white: #fff;
+  --yellow: #f4d04e;
+  --grey: #7f7f7f;
 }
 
 .attribution {
