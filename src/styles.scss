@@ -16,6 +16,23 @@
   padding: 0;
 }
 
+.card {
+  display: flex;
+  width: 384px;
+  background-color: var(--white);
+  padding: 24px;
+  gap: 24px;
+  flex-direction: column;
+}
+
+main {
+  background-color: var(--yellow);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 :root {
   --black: #000;
   --white: #fff;
